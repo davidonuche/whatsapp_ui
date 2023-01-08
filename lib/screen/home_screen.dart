@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen>
                   floating: false,
                   automaticallyImplyLeading: false,
                   centerTitle: false,
-                  title: "WhatsApp Business"
+                  title: "Whatsapp👋"
                       .text
                       .semiBold
                       .color(MyColors.textColor)

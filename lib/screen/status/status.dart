@@ -23,7 +23,7 @@ class _StatusState extends State<Status> {
                 backgroundImage: const DecorationImage(
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://avatars.githubusercontent.com/u/66767187?s=48&v=4",
+                    "https://avatars.githubusercontent.com/u/110064207?s=400&u=4",
                   ),
                 ),
               ).badge(
