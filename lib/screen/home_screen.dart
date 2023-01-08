@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   void initState() {
-    homeViewModel.tabController = TabController(length: 4, vsync: this)
+    homeViewModel.tabController = TabController(length: 3, vsync: this)
       ..addListener(() {
         setState(() {});
       });
@@ -110,9 +110,9 @@ class _HomeScreenState extends State<HomeScreen>
                             const PopupMenuItem(
                               child: Text("Clear call log"),
                             ),
-                            const PopupMenuItem(
-                              child: Text("Business Tools"),
-                            ),
+                            // const PopupMenuItem(
+                            //   child: Text("Business Tools"),
+                            // ),
                             const PopupMenuItem(
                               child: Text("Settings"),
                             ),
@@ -130,14 +130,14 @@ class _HomeScreenState extends State<HomeScreen>
                       indicatorColor: MyColors.tabColor,
                       labelPadding: const EdgeInsets.symmetric(vertical: 10),
                       tabs: [
-                        Tab(
-                          icon: Icon(
-                            Icons.store_outlined,
-                            color: homeViewModel.tabController.index == 0
-                                ? MyColors.tabColor
-                                : MyColors.textColor,
-                          ),
-                        ),
+                        // Tab(
+                        //   icon: Icon(
+                        //     Icons.store_outlined,
+                        //     color: homeViewModel.tabController.index == 0
+                        //         ? MyColors.tabColor
+                        //         : MyColors.textColor,
+                        //   ),
+                        // ),
                         Tab(
                           child: "chats"
                               .text
@@ -180,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen>
               child: TabBarView(
                 controller: homeViewModel.tabController,
                 children: const [
-                  MarketPlace(),
+                  // MarketPlace(),
                   Chats(),
                   Status(),
                   Calls(),
