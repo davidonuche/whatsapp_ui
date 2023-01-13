@@ -5,6 +5,7 @@ class ChatsModel {
   String imagePath;
   DateTime chatLastDate;
   String chatLastMsg;
+  
   ChatsModel({
     required this.name,
     required this.imagePath,

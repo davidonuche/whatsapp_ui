@@ -1,5 +1,7 @@
 part of 'home_imports.dart';
 
+
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -25,6 +27,49 @@ class _HomeScreenState extends State<HomeScreen>
     homeViewModel.tabController.dispose();
     super.dispose();
   }
+
+  // Future getImage(ImageSource) async {
+  //   final Image = await ImagePicker().pickImage(source: ImageSource.camera);
+  //   if (image == null) return;
+  //   final imageTempoary = File(_image!.path);
+
+  //   setState(() {
+  //     this._image = imageTempoary;
+  //   });
+  // }
+
+  // ImagePicker picker = ImagePicker();
+
+  // Future _pickImage(ImageSource sourse) async {
+  //   try {
+  //     final image = await ImagePicker().pickImage(source: sourse);
+  //     if (image == null) return;
+  //     File? img = File(image.path);
+  //     setState(() {
+  //       _image = img;
+  //       // Navigator.of(context).pop();
+  //     });
+  //   } on PlatformException catch (e) {
+  //     print(e);
+  //     Navigator.of(context).pop();
+  //   }
+  // }
+
+  // Future _pickVideo(ImageSource sourse) async {
+  //   try {
+  //     final image = await ImagePicker().pickVideo(source: sourse);
+  //     if (image == null) return;
+  //     File? img = File(image.path);
+  //     setState(() {
+  //       _image = img;
+  //       // Navigator.of(context).pop();
+  //     });
+  //   } on PlatformException catch (e) {
+  //     print(e);
+  //     Navigator.of(context).pop();
+  //   }
+  // }
+
 
   @override
   Widget build(BuildContext context) {

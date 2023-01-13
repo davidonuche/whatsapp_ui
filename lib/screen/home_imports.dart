@@ -1,4 +1,8 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:whatsapp_ui/screen/calls/calls_imports.dart';
 import 'package:whatsapp_ui/screen/status/status_imports.dart';
